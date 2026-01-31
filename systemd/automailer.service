@@ -1,0 +1,11 @@
+[Unit]
+Description=Auto WhatsApp Poster - post once
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/python3 /home/elvis/Desktop/AUTO/auto.py --once
+WorkingDirectory=/home/elvis/Desktop/AUTO
+Environment=DISPLAY=:0
+
+[Install]
+WantedBy=default.target
